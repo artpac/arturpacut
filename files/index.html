@@ -11,6 +11,7 @@
         <div class="container">
             <div class="header">
                 <a class="logo" href="/">AP</a>   
+                <button onclick="darkMode()">☼ MODE</button>
                    <div class="menu">
                         <a id="navButton" onclick="openNav()">=</a>
                         <div id="hiddenNav">
@@ -58,7 +59,6 @@
                                     As you progress, you will develop problem-solving skills, 
                                     logical thinking, and creativity, making you a valuable asset in the ever-evolving tech industry.</p>
                                     <!-- Change paragraph later -->
-                            
                                     <br><br><br><br><br><br>
                                     <ul id="languages">
                                         <li>C</li>
@@ -81,8 +81,8 @@
 
                         <div id="screenSection" id="contactMe">
                             <br><br>
-                            <h3>Contact Me</h3>
-                            <form action="submit.php" method="POST">
+                            <form action="submit.php" method="POST" id="form">
+                                <h3>Contact Me</h3>
                                 <p>Name</p> <input type="text" name="name" class="input">
                                 <p>Email</p> <input type="email" name="email" class="input">
                                 <p>Message</p><textarea name="message" rows="6" cols="25" class="input"></textarea><br>
