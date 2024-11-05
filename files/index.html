@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Artur Pacut</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="header">
+                <a class="logo" href="/">AP</a>   
+                   <div class="menu">
+                        <a id="navButton" onclick="openNav()">=</a>
+                        <div id="hiddenNav">
+                            <a id="navClose" onclick="closeNav()">X</a>
+                            <br>
+                            <ul>
+                                <li>Projects</li>
+                                <li><a href="index.html#aboutMe">About</a></li>
+                                <br>
+                                <li id="lightModeButton"><button onclick="darkMode()">☼ MODE</button></li>
+                                <li id="darkModeButton"><button onclick="lightMode()">☾ MODE</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+            <div class ="everything">
+                <div class="content" onmouseover="mouseHovertest()" onclick="closeNav()">
+                    <div class="static">
+                        <div id="stick">
+                            <h1><bold>Artur Pacut</bold></h1>
+                            <h5>Computer Science Student</h5>
+
+                            <br>
+                            <li><a href=index.html#aboutMe>-About</a></li>
+                            <li>Projects</li>
+                        </div>
+                    </div>
+
+                    <div class="scrollable">
+                        <div id="screenSection" class="break"></div>
+                        <div id="screenSection">
+                            <br><br>
+                            <div id="aboutMe">
+                                <p>As a computer science student at Napier University, 
+                                    you are at the forefront of technology and innovation. 
+                                    You have the opportunity to delve into the fundamental principles of computer science, 
+                                    such as algorithms, data structures, and programming languages.
+                                    With a strong foundation in these areas, you can explore various specializations like artificial intelligence, 
+                                    cybersecurity, and software engineering.
+                                    Napier University's state-of-the-art facilities and collaborations with industry leaders
+                                    provide you with hands-on experience and real-world applications. 
+                                    As you progress, you will develop problem-solving skills, 
+                                    logical thinking, and creativity, making you a valuable asset in the ever-evolving tech industry.</p>
+                                    <!-- Change paragraph later -->
+                            
+                                    <br><br><br><br><br><br>
+                                    <ul id="languages">
+                                        <li>C</li>
+                                        <li>C++</li>
+                                        <li>Java</li>
+                                        <li>Python</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>C#</li>
+                                    </ul>
+                            </div>
+                        </div>
+                            
+                        <div id="screenSection" id="projects">
+                            <br><br>
+                            <h3>Projects</h3>
+                            <p>Here are some of the projects I have created.</p>   
+                        </div>
+
+                        <div id="screenSection" id="contactMe">
+                            <br><br>
+                            <h3>Contact Me</h3>
+                            <form action="submit.php" method="POST">
+                                <p>Name</p> <input type="text" name="name" class="input">
+                                <p>Email</p> <input type="email" name="email" class="input">
+                                <p>Message</p><textarea name="message" rows="6" cols="25" class="input"></textarea><br>
+                                <input type="submit" value="Send">
+                            </form>
+                            
+                        </div>
+
+
+                        <footer id="screenSection">
+                            <br><br>
+                            <p>© Artur Pacut 2024</p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
