@@ -20,7 +20,12 @@ function closeNav() {
 }
 
 
-function mouseHover() {
-    var element = document.body;
-    document.styleSheets = "radial-gradient(circle at center, red 0, blue, green 100%)"
-}
+const mouse = document.querySelector('.mouseHover');
+mouse.addEventListener('mousemove', e => {
+  const rect = e.target.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  
+  mouse.style.setProperty('--x', x + 'px');
+  mouse.style.setProperty('--y', y + 'px');
+});
