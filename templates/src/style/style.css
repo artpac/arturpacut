@@ -165,8 +165,8 @@ hr{
     background-color: lightgrey;
     color:black;
 }
-.darkmode #form{
-    background-color: rgb(1, 81, 81);
+.darkMode #form{
+    background-color: rgb(1, 66, 66);
     color: white;
 }
 #form input, #form textarea{
