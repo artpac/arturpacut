@@ -7,7 +7,7 @@
     scroll-behavior: smooth;
     list-style: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    transition-duration: 0.8s;
+    transition-duration: 1s;
 }
 .darkMode{
     background-color: #696969;

@@ -10,6 +10,8 @@ function lightMode() {
     document.getElementById("lightModeButton").style.display = "block";
     document.getElementById("darkModeButton").style.display = "none";
 }
+
+
 function openNav(){
     var hiddenNav = document.getElementById("hiddenNav");
     hiddenNav.style.display = "block";
@@ -20,28 +22,23 @@ function openNav(){
         } else {
             clearInterval(fade);
         }
-    }, 16);
+    }, 1);
     document.getElementById("navButton").style.display = "none";
 }
 
-// function closeNav() {
-//     var hiddenNav = document.getElementById("hiddenNav");
-//     hiddenNav.style.display = "none";
-//     hiddenNav.style.opacity = "1";
-//     setInterval = 16;
-//     var fade = setInterval(function () {
-//         if (hiddenNav.style.opacity > "0") {
-//             hiddenNav.style.opacity = parseFloat(hiddenNav.style.opacity) - 0.1;
-//         } else {
-//             clearInterval(fade);
-//         }
-//     }, 16);
-//     document.getElementById("navButton").style.display = "block";
-// }
 function closeNav() {
-    document.getElementById("hiddenNav").style.display = "none";
+    var hiddenNav = document.getElementById("hiddenNav");
+    hiddenNav.style.opacity = "1";
+    var fade = setInterval(function () {
+        if (hiddenNav.style.opacity > "0") {
+            hiddenNav.style.opacity = parseFloat(hiddenNav.style.opacity) - 0.1;
+        } else {
+            clearInterval(fade);
+        }
+    }, 1);
     document.getElementById("navButton").style.display = "block";
 }
+
 
 
 function mouseHover() {
