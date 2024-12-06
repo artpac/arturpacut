@@ -7,10 +7,8 @@
     scroll-behavior: smooth;
     list-style: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
 }
-
-
 .darkMode{
     background-color: #696969;
     color: white;
@@ -72,6 +70,18 @@ hr{
 #navClose{
     float: right;
 }
+
+#externalLinks{
+    display:inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    left: 0;
+}
+#externalLinks img{
+    width: 40px;
+    height: 40px;
+}
+
 #hiddenNav button{
     background-color: white;
     border: 2px solid lightgrey;
@@ -86,24 +96,6 @@ hr{
 }
 .darkMode #hiddenNav button:hover{
     background-color: white;
-}
-@media screen and (max-width:992px) {
-    #hiddenNav{
-        width: 20vh;
-        height: 30vh;
-        right: 2vh;
-    }
-}
-
-#externalLinks{
-    display:inline-block;
-    border: 2px solid black;
-    border-radius: 10px;
-    left: 0;
-}
-#externalLinks img{
-    width: 40px;
-    height: 40px;
 }
 
 .content{
@@ -147,13 +139,12 @@ hr{
 }
 
 #languages li{
-    display: inline-block;
+    display: inline;
     padding:15px;
     background-color: lightgrey;
     border-radius: 30px;
     font-size: small;
     font-stretch: ultra-expanded;
-    margin-bottom:10px;
 }
 .darkMode #languages li{
     background-color: rgb(1, 81, 81);
@@ -183,8 +174,17 @@ hr{
     border-radius: 10px;
     padding: 10px;
 }
-/* @screen and (max-width:992px) {
-    #form{
-        
-    }
-} */
+
+#githubProject{
+    transform: scale(0.7);
+    border: 2px solid black;
+    padding: 20px;
+}
+
+#githubProject:hover{
+    transform: scale(0.8);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.7) ;
+    border-radius: 40px;
+    backdrop-filter: blur(1px);
+    color:black;
+}
