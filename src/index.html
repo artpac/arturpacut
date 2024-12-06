@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Artur Pacut</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="script.js"></script>
+
+        
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <a class="logo" href="index.html#start">AP</a>   
+                   <div class="menu">
+                        <a id="navButton" onclick="openNav()">=</a>
+                        <div id="hiddenNav">
+                            <a id="navClose" onclick="closeNav()">X</a>
+                            <br>
+                            <ul>
+                                <li><a href="index.html#aboutMe">About</a></li>
+                                <li><a href="index.html#projects">Projects</a></li>
+                                <li><a href="index.html#contactMe">Contact</a></li>
+                                <br>
+                                <li id="lightModeButton"><button onclick="darkMode()">☼ MODE</button></li>
+                                <li id="darkModeButton"><button onclick="lightMode()">☾ MODE</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+            <div class ="everything">
+                <div class="content" onclick="closeNav()">
+                    <div class="static">
+                        <div id="stick">
+                            <h1><bold>Artur Pacut</bold></h1>
+                            <h5>Computer Science Student</h5>
+
+                            
+
+                            <br>
+                            <li><a href=index.html#aboutMe>-About</a></li>
+                            <li><a href=index.html#projects>Projects</a></li>
+                            <br>
+                            <div id ="externalLinks">
+                                <li><a href="https://github.com/artpac"><img src="images/githubBW.svg"></a></li>
+                                <li><a href="https://www.linkedin.com/in/artpac2050/"><img src="images/linkedinBW.svg"></a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scrollable">
+                            <div class="mouseHover">
+                                <div id="start"><div id="screenSection" class="break"></div></div>
+                                <div id="screenSection">
+                                    <br><br>
+                                    <div id="aboutMe">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti eligendi quidem illum, laboriosam minus reprehenderit iste aliquid, veniam labore eaque maiores sed officia, rem dolor atque quasi natus ipsum impedit.
+                                        Itaque obcaecati perferendis possimus enim autem? Dicta inventore suscipit voluptates molestiae impedit aperiam animi! Fugiat sed, eos ea, adipisci ducimus ut dolorem nostrum, possimus voluptatem rerum dolor aliquam aliquid aperiam!
+                                        Modi quibusdam ducimus, eveniet impedit iusto quaerat? Quod, corporis praesentium. Commodi beatae debitis consectetur sapiente delectus, exercitationem culpa officia harum, quibusdam ullam cupiditate eum repellat, dolores minus! Officiis, consectetur sapiente.
+                                        Enim, incidunt! Nulla, ea perspiciatis ducimus earum, eos quidem ut tempore error similique nihil vero? Suscipit mollitia, tempore, praesentium, corrupti enim officia ipsum et aperiam iure dolore neque exercitationem doloribus!</p>
+                                            <!-- Change paragraph later -->
+                                            <br><br><br><br><br><br>
+                                            <ul id="languages">
+                                                <li>C</li>
+                                                <li>C++</li>
+                                                <li>Java</li>
+                                                <li>Python</li>
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>JavaScript</li>
+                                                <li>C#</li>
+                                            </ul>
+                                    </div>
+                                </div>
+                                    
+                                <div id="screenSection">
+                                    <div id = "projects">
+                                        <br>
+                                        <h3>My Projects</h3>
+                                        
+                                        <div id="githubProject">
+                                            <a href="https://github.com/artpac/sudokuInC">
+                                                <h2>Sudoku</h2>
+                                                <p>A sudoku game that is written entirely in C</p>
+                                                <br>
+                                                <ul id="languages">
+                                                    <li>C</li>
+                                                </ul>
+                                            </a>
+                                        </div>
+                                        <div id="githubProject">
+                                            <a href="https://github.com/artpac/artpac2050Travel">
+                                                <h2>Personal Website</h2>
+                                                <p>A website that I created and designed for my web technologies class at napier university.
+                                                    I created this website to post my photos and a description of where I went, I categorised it by country and city so that it is easier to navigate.
+                                                </p>
+                                                <br>
+                                                <ul id="languages">
+                                                    <li>HTML</li>
+                                                    <li>CSS</li>
+                                                    <li>JavaScript</li>
+                                                </ul>
+                                            </a>
+                                        </div>
+
+                                        <div id="githubProject">
+                                            <a href="https://github.com/wompoloos/cyber-fortress">
+                                                <h2>Cyber Fortress</h2>
+                                                <p>A tower defence game that I planned and created in a group of three people.
+                                                    We created this game in our games engineering class at Napier University.
+                                                </p>
+                                                <br>
+                                                <ul id="languages">
+                                                    <li>C++</li>
+                                                    <li>CMAKE</li>
+                                                </ul>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div id="screenSection">
+                                    <div id="contactMe">
+                                        <br><br>
+                                        <form action="submit.php" method="POST" id="form">
+                                            <h3>Contact Me</h3>
+                                            <p>Name</p> <input type="text" name="name" class="input">
+                                            <p>Email</p> <input type="email" name="email" class="input">
+                                            <p>Message</p><textarea name="message" rows="6" cols="25" class="input"></textarea><br>
+                                            <input type="submit" value="Send">
+                                        </form>
+                                    </div>
+                                </div>
+
+
+                                <footer id="screenSection">
+                                    <br><br>
+                                    <p>© Artur Pacut 2024</p>
+                                    
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+     </body>
+    <script src="script.js"></script>
+</html>
