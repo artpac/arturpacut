@@ -188,3 +188,34 @@ hr{
     backdrop-filter: blur(1px);
     color:black;
 }
+
+footer img{
+    height: 40px;
+    width: 40px;
+}
+footer{
+    text-align: left;
+}
+#webLinks{
+    text-align: center;
+}
+#webLinks li{
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+}
+#footerLinks{
+    text-align: right;
+    display: inline;
+}
+#footerLinks li{
+    display: inline;
+    padding: 10px;
+    font-size: x-large;
+}
+footer li:hover{
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.7) ;
+    border-radius: 40px;
+    backdrop-filter: blur(1px);
+    color:black;
+}
