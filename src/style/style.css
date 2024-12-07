@@ -98,6 +98,14 @@ hr{
     background-color: white;
 }
 
+@media screen and (max-width:992px) {
+    #hiddenNav{
+        width: 20vh;
+        height: 30vh;
+        right: 2vh;
+    }
+}
+
 .content{
     display: flex;
     font-size:medium;
@@ -139,12 +147,13 @@ hr{
 }
 
 #languages li{
-    display: inline;
+    display: inline-block;
     padding:15px;
     background-color: lightgrey;
     border-radius: 30px;
     font-size: small;
     font-stretch: ultra-expanded;
+    margin-bottom: 10px;
 }
 .darkMode #languages li{
     background-color: rgb(1, 81, 81);
