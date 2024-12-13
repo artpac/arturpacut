@@ -188,6 +188,7 @@ hr{
     transform: scale(0.7);
     border: 2px solid black;
     padding: 20px;
+    overflow: hidden;
 }
 
 #githubProject:hover{

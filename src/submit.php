@@ -1,42 +1,34 @@
 <?php
+
+$name = $_POST["name"];
+$email = $_POST["email"];
+$message = $_POST["message"];
+
+require "../vendor/autoload.php";
+
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 
-function sendEmail($submission) {
-  //PHPMailer Object
-  $mail = new PHPMailer(true); //Argument true in constructor enables exceptions
+$mail = new PHPMailer(true);
 
-  //From email address and name
-  $mail->From = $submission["email"];
-  $mail->FromName = $submission["name"];
+$mail->SMTPDebug = SMTP::DEBUG_SERVER;
 
-  //To address and name
-  $mail->addAddress("artpac2050@gmail.com", "Your Name");
+$mail->isSMTP();
+$mail->SMTPAuth = true;
 
-  //Address to which recipient will reply
-  $mail->addReplyTo($submission["email"], $submission["name"]);
+$mail->Host = "smtp.gmail.com ";
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->Port = 587;
 
-  //CC and BCC
-  // $mail->addCC("cc@example.com");
-  // $mail->addBCC("bcc@example.com");
+$mail->Username = "arturcontactform@gmail.com";
+$mail->Password = "moto ycad nxac ifhs";
 
-  //Send HTML or Plain Text email
-  $mail->isHTML(true);
+$mail->addReplyTo($email, $name);
+$mail->addAddress("arturcontactform@gmail.com", "Artur");
 
-  $mail->Subject = "New contact form submission from example.com";
-  $mailContent = "<p>From: </p>".$submission["email"].
-  "<p>Name: </p>".$submission["name"].
-  "<p>Message: </p>".$submission["message"];
+$mail->Body = $message;
 
-  // echo $mailContent;
-
-  $mail->Body = $mailContent;
-
-  try {
-      $mail->send();
-      echo "Message has been sent successfully";
-  } catch (Exception $e) {
-      echo "Mailer Error: " . $mail->ErrorInfo;
-  }
-}
+$mail->send();
+ 
+header("Location: ../src/index.html#contactMe");
 ?>

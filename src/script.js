@@ -37,8 +37,7 @@ function closeNav() {
   document.getElementById("navButton").style.display = "block";
 }
 
-function mouseHover() {
-  var element = document.body;
-  document.styleSheets =
-    "radial-gradient(circle at center, red 0, blue, green 100%)";
+function displayPopup()
+{
+   alert("Form submitted!");
 }
