@@ -1,2 +1,3 @@
-# advancedWeb
-Website for Advanced Web Tech Class at Napier University
+#Portfolio Website 
+Originally created for my Advanced Website Technologies class
+Portfolio website for my projects 
